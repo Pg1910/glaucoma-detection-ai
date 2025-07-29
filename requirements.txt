@@ -1,0 +1,25 @@
+# Core scientific and ML libraries
+numpy
+pytorch
+scikit-learn
+torchvision
+Pillow
+tqdm
+matplotlib
+seaborn
+scikit-image
+
+# Deep learning and augmentation
+albumentations
+albumentations[imgaug]
+torchmetrics
+segmentation-models-pytorch
+timm
+
+# Visualization and reporting
+gradio
+fpdf2
+
+# Additional tools
+roboflow
+supervision
