@@ -1,7 +1,26 @@
 # here all the basic informatics are shown about this project.
 ### model stacking flowchart showcasing our proposed pipeline
 <img width="1889" height="791" alt="Screenshot 2025-07-07 191739" src="https://github.com/user-attachments/assets/9c888c49-d11c-4107-af53-57871c4383ca" />
-Glaucoma is a leading cause of irreversible blindness, often progressing asymptomatically until late stages. Accurate early detection is thus vital. Existing automated systems typically rely on either global image-based classifiers or optic disc/cup segmentation pipelines, each with limited robustness across datasets. In this work, we propose GlaucFusion, a dualbranch vision transformer framework for segmentation-aware
-glaucoma diagnosis. Our architecture combines two complementary pathways: (1) an Encoder-Only Mask Transformer (EOMT) that leverages OD/OC segmentation masks alongside fundus images, and (2) a domain-adaptive DINOv2-ViT-S/14 branch with dataset-specific classifiers. A novel Laplacian variance filter discards low-quality inputs, and a dataset classification module maps inputs to their source domain. We introduce a dynamic
-confidence-weighted fusion module that combines predictions from both branches based on their proximity to the decision boundary. GlaucFusion achieves strong generalization on four benchmark datasets—Drishti-GS, REFUGE, HYGD, and AIROGS-Light—with peak accuracy of 96.55% on REFUGE and
-robust performance on smaller datasets. Our results demonstrate that fusing segmentation-aware and global representations offers significant improvements in generalizability and interpretability for glaucoma detection.
+
+GlaucFusion
+Glaucoma is a leading cause of irreversible blindness, often progressing silently until advanced stages. Early and accurate detection is critical for preventing vision loss.
+
+GlaucFusion is a dual-branch Vision Transformer framework designed for robust and generalizable glaucoma diagnosis. Our approach integrates segmentation-aware and global image-based representations for improved accuracy across diverse datasets.
+
+Key Features
+
+Dual-Branch Architecture:
+
+Encoder-Only Mask Transformer (EOMT): Leverages optic disc/cup segmentation masks along with fundus images.
+
+Domain-Adaptive DINOv2-ViT-S/14: Uses dataset-specific classifiers to adapt to different sources.
+
+Quality Control: Laplacian variance filter automatically discards low-quality inputs.
+
+Domain Mapping: Dataset classification module routes inputs to the correct domain.
+
+Dynamic Fusion: Confidence-weighted fusion module combines predictions from both branches based on their proximity to the decision boundary.
+
+Conclusion
+
+By fusing complementary features, GlaucFusion offers improved generalizability, interpretability, and reliability for automated glaucoma detection.
